@@ -23,7 +23,7 @@
 
     #blog, 
     .blog-details-container{
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
 
     #profile,
@@ -91,7 +91,7 @@
     }
 
     .blog-sub-title{
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .logo{
