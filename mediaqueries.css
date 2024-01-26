@@ -48,6 +48,7 @@
         width: 275px;
         height: 350px;
         margin: 0 auto 2rem;
+        margin-top: 2rem;
     }
 
     .about-containers{
@@ -105,6 +106,12 @@
     }
 
     .section__pic-container{
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+
+    .about-pic{
         width: auto;
         height: 46vw;
         justify-content: center;
