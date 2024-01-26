@@ -50,6 +50,7 @@ a:hover{
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
+    cursor: pointer;
 }
 
 .logo{
@@ -119,26 +120,32 @@ a:hover{
 
 .hamburger-icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
+    transition: all 0.5s;
 }
 
 .hamburger-icon.open span:nth-child(2) {
     opacity: 0;
+    transition: all 0.5s;
 }
 
 .hamburger-icon.open span:nth-child(3) {
     transform: rotate(-45deg) translate(10px, -5px);
+    transition: all 0.5s;
 }
 
 .hamburger-icon span:first-child {
-    transform: none;
-}
-
-.hamburger-icon span:first-child {
+    transition: all 1s;
     opacity: 1;
 }
 
-.hamburger-icon span:first-child {
-    transform: none;
+.hamburger-icon span:nth-child(2) {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.hamburger-icon span:nth-child(3) {
+    opacity: 1;
+    transition: all 0.5s;
 }
 
 /* Section Starts */
@@ -215,6 +222,11 @@ section {
 .icon{
     cursor: pointer;
     height: 2rem;
+}
+
+.icon-aml{
+    cursor: pointer;
+    height: 3.5rem;
 }
 
 /* Buttons */
@@ -371,8 +383,8 @@ article .icon{
 
 .project-img{
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
 }
 
 .project-title{
