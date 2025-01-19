@@ -228,6 +228,11 @@ section {
   height: 3.5rem;
 }
 
+.icon-iitgn {
+  cursor: pointer;
+  height: 3.5rem;
+}
+
 /* Buttons */
 
 .btn-container {
