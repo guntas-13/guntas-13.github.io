@@ -41,10 +41,16 @@
   }
 
   .section__pic-container {
-    width: 275px;
-    height: 350px;
+    width: 400px;
+    height: auto;
     margin: 0 auto 2rem;
     margin-top: 2rem;
+  }
+
+  #profile .section__pic-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
   }
 
   .about-containers {
@@ -105,9 +111,13 @@
   }
 
   .section__pic-container {
-    width: auto;
-    height: 55vw;
-    justify-content: center;
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  #profile .section__pic-container img {
+    max-height: 350px;
   }
 
   .about-pic {

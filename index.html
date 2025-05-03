@@ -21,6 +21,7 @@
             >
           </li>
           <li><a href="https://guntas-13.github.io/Blog">Blog</a></li>
+          <li><a href="https://guntas-13.github.io/osl.docs/">osl.</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -41,6 +42,13 @@
                 >Blog</a
               >
             </li>
+            <li>
+              <a
+                href="https://guntas-13.github.io/osl.docs/"
+                onclick="toggleMenu()"
+                >osl.</a
+              >
+            </li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             <li>
@@ -55,7 +63,10 @@
 
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/ProfileX.png" alt="Guntas Saran Profile" />
+        <img src="./assets/Profile1.png" alt="Guntas Saran Profile" />
+        <p class="profile-caption">
+          At the Dean's List award ceremony (Semester I, 2024-25)
+        </p>
       </div>
       <div class="section__text">
         <p class="section__text_p1">Hi! This is</p>
@@ -98,9 +109,11 @@
           <img
             src="./assets/Profile_P2.jpeg"
             alt="Guntas Profile"
-            ,
             class="about-pic"
           />
+          <p class="profile-caption">
+            At the Inter IIT Tech Meet 13.0 held at IIT Bombay
+          </p>
         </div>
 
         <div class="about-details-container">
@@ -110,7 +123,6 @@
                 ><img
                   src="./assets/skan.png"
                   alt="experience"
-                  ,
                   class="icon icon-aml"
               /></a>
               <h3>Experience</h3>
@@ -121,7 +133,6 @@
                 ><img
                   src="./assets/iitgn.png"
                   alt="education"
-                  ,
                   class="icon icon-iitgn"
                 />
               </a>
@@ -143,9 +154,8 @@
               <br />
               I am keen on developing interactive visual representations of
               Machine Learning Processes and Physical Models. Currently I'm
-              exploring several domains ranging from Data Science, Computer
-              Organization and Architecture to Applied Machine Learning and
-              Software Development.
+              exploring several domains ranging from Data Science, Systems to
+              Applied Machine Learning and Software Development.
             </p>
           </div>
         </div>
@@ -154,7 +164,7 @@
         src="./assets/arrow.png"
         alt="arrow"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href='./#blog'"
       />
     </section>
 
@@ -179,34 +189,10 @@
                 <div>
                   <h3>Core Committee Member</h3>
                   <p>
-                    Amalthea ’23 (Annual Technical Summit of IIT Gandhinagar)
+                    Amalthea '23 (Annual Technical Summit of IIT Gandhinagar)
                   </p>
                 </div>
               </article>
-
-              <!-- <article>
-                <img src="./assets/checkmark.png" alt="check" class="icon" />
-                <div>
-                  <h3>Entry 3</h3>
-                  <p>Sub-Entry3</p>
-                </div>
-              </article> -->
-
-              <!-- <article>
-                <img src="./assets/checkmark.png" alt="check" class="icon" />
-                <div>
-                  <h3>Entry 3</h3>
-                  <p>Sub-Entry3</p>
-                </div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" alt="check" class="icon" />
-                <div>
-                  <h3>Entry 4</h3>
-                  <p>Sub-Entry4</p>
-                </div>
-              </article> -->
             </div>
           </div>
 
@@ -218,6 +204,10 @@
                 <div>
                   <h3>Undergraduate Teaching Assistant</h3>
                   <p>ES335: Machine Learning | Prof. Nipun Batra</p>
+                  <p>
+                    ES114: Probability, Statistics, and Data Visualizations |
+                    Prof. Nipun Batra
+                  </p>
                 </div>
               </article>
 
@@ -228,35 +218,10 @@
                   <p>Technical Council, IIT Gandhinagar</p>
                 </div>
               </article>
-
-              <!-- <article>
-                <img src="./assets/checkmark.png" alt="check" class="icon" />
-                <div>
-                  <h3>Entry 8</h3>
-                  <p>Sub-Entry8</p>
-                </div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" alt="check" class="icon" />
-                <div>
-                  <h3>Entry 9</h3>
-                  <p>Sub-Entry9</p>
-                </div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" alt="check" class="icon" />
-                <div>
-                  <h3>Entry 10</h3>
-                  <p>Sub-Entry10</p>
-                </div>
-              </article> -->
             </div>
           </div>
         </div>
       </div>
-
       <img
         src="./assets/arrow.png"
         alt="arrow_1"
@@ -272,68 +237,75 @@
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/MIPS.png" alt="Project1" class="project-img" />
+              <img src="./assets/dns.png" alt="Project1" class="project-img" />
             </div>
 
             <h2 class="blog-sub-title project-title">
-              Full FPGA Implementation of 32-bit FSM-based Multi-State MIPS
-              Processor
+              DNS Stub-Resolver using AF_XDP<br />
+              (CS331 Computer Networks)
             </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/guntas-13/mips-processor-basys3'"
+                onclick="location.href='https://github.com/Kishan-Ved/dns-af_xdp'"
               >
                 Project Link
               </button>
 
-              <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com/guntas-13'">
-                            Video Link
-                        </button> -->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/watch?v=_tq28Ji7U9M'"
+              >
+                Video Link
+              </button>
             </div>
           </div>
 
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/Blog.png" alt="Project1" class="project-img" />
+              <img src="./assets/osl.png" alt="Project1" class="project-img" />
             </div>
 
             <h2 class="blog-sub-title project-title">
-              Quarto-based Blog Page on Concepts built from Scratch!
+              osl: The Unambiguous Programming Language <br />(CS327 Compilers)
             </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://guntas-13.github.io/Blog'"
+                onclick="location.href='https://github.com/mshandilya/osl.'"
               >
                 Project Link
               </button>
 
-              <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com/guntas-13'">
-                            Video Link
-                        </button> -->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://guntas-13.github.io/osl.docs/'"
+              >
+                Documentation
+              </button>
             </div>
           </div>
 
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/LLM.png" alt="Project1" class="project-img" />
+              <img
+                src="./assets/shell.png"
+                alt="Project1"
+                class="project-img"
+              />
             </div>
 
             <h2 class="blog-sub-title project-title">
-              LLM for Telugu Language
+              Mini-OS for Raspberry Pi written in Rust <br />(CS330 Operating
+              Systems)
             </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/guntas-13/CS613-NLP-Telugu-Team1'"
+                onclick="location.href='https://github.com/IITGN-Operating-Systems/team8'"
               >
                 Project Link
               </button>
-
-              <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com/guntas-13'">
-                            Video Link
-                        </button> -->
             </div>
           </div>
         </div>
@@ -390,6 +362,7 @@
               >
             </li>
             <li><a href="https://guntas-13.github.io/Blog">Blog</a></li>
+            <li><a href="https://guntas-13.github.io/osl.docs/">osl.</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -399,6 +372,10 @@
       <p>Copyright &#169; 2025 Guntas Singh Saran. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script> -->
   </body>
 </html>
