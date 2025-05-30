@@ -233,12 +233,14 @@ section {
 
 .icon-aml {
   cursor: pointer;
-  height: 3.5rem;
+  height: 2.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .icon-iitgn {
   cursor: pointer;
-  height: 3.5rem;
+  height: 4.25rem;
 }
 
 /* Buttons */
