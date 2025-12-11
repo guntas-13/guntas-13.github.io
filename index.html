@@ -7,7 +7,7 @@
     <title>Portfolio Guntas</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" href="./assets/tabicon.png" />
+    <link rel="icon" href="./assets/favicon.png" />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -63,40 +63,36 @@
 
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/Profile1.png" alt="Guntas Saran Profile" />
-        <p class="profile-caption">
+        <img src="./assets/pf.jpeg" alt="Guntas Saran Profile" />
+        <!-- <p class="profile-caption">
           At the Dean's List award ceremony (Semester I, 2024-25)
-        </p>
+        </p> -->
       </div>
       <div class="section__text">
         <p class="section__text_p1">Hi! This is</p>
         <h1 class="title">Guntas Singh Saran</h1>
-        <p class="section__text_p2">Junior Undergraduate at IIT Gandhinagar</p>
+        <p class="section__text_p2">Senior Undergraduate at IIT Gandhinagar</p>
         <p class="section__text_p3">Computer Science and Engineering</p>
         <div class="btn-container">
-          <button
+          <a
             class="btn btn-color-2"
-            onclick="window.open('./assets/Guntas_Resume_External.pdf')"
+            href="./assets/Guntas_Resume_External.pdf"
+            target="_blank"
           >
             Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Me
-          </button>
+          </a>
+          <a class="btn btn-color-1" href="#contact"> Contact Me </a>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/guntas-singh-saran-2b8811179/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="Github"
-            class="icon"
-            onclick="location.href='https://www.github.com/guntas-13'"
-          />
+          <a
+            href="https://www.linkedin.com/in/guntas-singh-saran-2b8811179/"
+            target="_blank"
+          >
+            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
+          </a>
+          <a href="https://www.github.com/guntas-13" target="_blank">
+            <img src="./assets/github.png" alt="Github" class="icon" />
+          </a>
         </div>
       </div>
     </section>
@@ -107,12 +103,14 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/Profile_P2.jpeg"
+            src="./assets/cmmrs.jpeg"
             alt="Guntas Profile"
             class="about-pic"
           />
           <p class="profile-caption">
-            At the Inter IIT Tech Meet 13.0 held at IIT Bombay
+            At the Max Planck Institute for Software Systems (MPI-SWS),
+            Saarbrücken, Germany attending the The Cornell, Maryland, Max Planck
+            Pre-doctoral Research School in Computer Science (CMMRS 2025)
           </p>
         </div>
 
@@ -164,6 +162,184 @@
         src="./assets/arrow.png"
         alt="arrow"
         class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="blog-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/1-open.png"
+                alt="Project1"
+                class="project-img"
+              />
+            </div>
+
+            <h2 class="blog-sub-title project-title">Multimodal Input App</h2>
+            <h4 class="blog-sub-title project-title">
+              An accessible input web application featuring multiple modalities
+              - Head-Gaze, Voice Recognition, Switch Control along with
+              LLM-powered keyboard prediction for text entry and interaction.
+            </h4>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://github.com/guntas-13/multimodal-input-with-gaze-switch-voice-llm"
+                target="_blank"
+              >
+                Project Link
+              </a>
+
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://guntas-13.github.io/multimodal-input-with-gaze-switch-voice-llm/"
+                target="_blank"
+              >
+                Deployed App
+              </a>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/osl.png" alt="Project1" class="project-img" />
+            </div>
+
+            <h2 class="blog-sub-title project-title">osl.</h2>
+            <h4 class="blog-sub-title project-title">
+              Compiler for an unambiguous programming language. Custom
+              unambiguous grammar with custom bytecode and virtual machine.
+            </h4>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://github.com/mshandilya/osl."
+                target="_blank"
+              >
+                Project Link
+              </a>
+
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://guntas-13.github.io/osl.docs/"
+                target="_blank"
+              >
+                Documentation
+              </a>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/shell.png"
+                alt="Project1"
+                class="project-img"
+              />
+            </div>
+
+            <h2 class="blog-sub-title project-title">Mini-OS</h2>
+            <h4 class="blog-sub-title project-title">
+              Mini-OS for Raspberry Pi written in Rust
+            </h4>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://github.com/IITGN-Operating-Systems/team8"
+                target="_blank"
+              >
+                Project Link
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="arrow_1"
+        class="icon arrow"
+        onclick="location.href='./#posters'"
+      />
+    </section>
+
+    <section id="posters">
+      <p class="section__text_p1">Checkout My</p>
+      <h1 class="title">Posters</h1>
+      <div class="blog-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/p1.png" alt="Project1" class="project-img" />
+            </div>
+
+            <h2 class="blog-sub-title project-title">AVX512 & NEON</h2>
+            <h4 class="blog-sub-title project-title">
+              Large Integer Addition and Queue of Additions using AVX512 and
+              NEON Intrinsics
+            </h4>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://drive.google.com/file/d/15-_mJqWtntOaMUlM6l0bfWzzSqDafXFe/view?usp=drive_link"
+                target="_blank"
+              >
+                Poster Link
+              </a>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/p2.jpeg" alt="Project1" class="project-img" />
+            </div>
+
+            <h2 class="blog-sub-title project-title">ADAPT-HIPIE</h2>
+            <h4 class="blog-sub-title project-title">
+              Open-Vocabulary Image Segmentation using Adapters
+            </h4>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://drive.google.com/file/d/16hMnl80pwZqLfQ2aTkf0Sk2J8RTX-TJ9/view?usp=sharing"
+                target="_blank"
+              >
+                Poster Link
+              </a>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/p3.jpeg" alt="Project1" class="project-img" />
+            </div>
+
+            <h2 class="blog-sub-title project-title">LDM</h2>
+            <h4 class="blog-sub-title project-title">
+              Custom Implementation of Latent Diffusion Probabilistic Models
+            </h4>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://github.com/guntas-13/SRIP2024/blob/master/Posters/LDM.png"
+                target="_blank"
+              >
+                Poster Link
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="arrow_1"
+        class="icon arrow"
         onclick="location.href='./#blog'"
       />
     </section>
@@ -174,7 +350,7 @@
       <div class="blog-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="blog-sub-title">Deck 1</h2>
+            <!-- <h2 class="blog-sub-title">Deck 1</h2> -->
             <div class="article-container">
               <article>
                 <img src="./assets/checkmark.png" alt="check" class="icon" />
@@ -197,17 +373,18 @@
           </div>
 
           <div class="details-container">
-            <h2 class="blog-sub-title">Deck 2</h2>
+            <!-- <h2 class="blog-sub-title">Deck 2</h2> -->
             <div class="article-container">
               <article>
                 <img src="./assets/checkmark.png" alt="check" class="icon" />
                 <div>
                   <h3>Undergraduate Teaching Assistant</h3>
-                  <p>ES335: Machine Learning | Prof. Nipun Batra</p>
+                  <p>ES335: Machine Learning (Fall 2024) | Prof. Nipun Batra</p>
                   <p>
-                    ES114: Probability, Statistics, and Data Visualizations |
-                    Prof. Nipun Batra
+                    ES114: Probability, Statistics, and Data Visualizations
+                    (Spring 2025) | Prof. Nipun Batra
                   </p>
+                  <p>ES335: Machine Learning (Fall 2025) | Prof. Nipun Batra</p>
                 </div>
               </article>
 
@@ -222,95 +399,6 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="arrow_1"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-
-    <section id="projects">
-      <p class="section__text_p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="blog-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/dns.png" alt="Project1" class="project-img" />
-            </div>
-
-            <h2 class="blog-sub-title project-title">
-              DNS Stub-Resolver using AF_XDP<br />
-              (CS331 Computer Networks)
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Kishan-Ved/dns-af_xdp'"
-              >
-                Project Link
-              </button>
-
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.youtube.com/watch?v=_tq28Ji7U9M'"
-              >
-                Video Link
-              </button>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/osl.png" alt="Project1" class="project-img" />
-            </div>
-
-            <h2 class="blog-sub-title project-title">
-              osl: The Unambiguous Programming Language <br />(CS327 Compilers)
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/mshandilya/osl.'"
-              >
-                Project Link
-              </button>
-
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://guntas-13.github.io/osl.docs/'"
-              >
-                Documentation
-              </button>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/shell.png"
-                alt="Project1"
-                class="project-img"
-              />
-            </div>
-
-            <h2 class="blog-sub-title project-title">
-              Mini-OS for Raspberry Pi written in Rust <br />(CS330 Operating
-              Systems)
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/IITGN-Operating-Systems/team8'"
-              >
-                Project Link
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <img
         src="./assets/arrow.png"
         alt="arrow_1"
